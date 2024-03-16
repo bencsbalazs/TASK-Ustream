@@ -1,0 +1,5 @@
+image:
+  repository: bencsbalazs/TASK-Ustream
+  tag: latest
+service:
+  port: 5000

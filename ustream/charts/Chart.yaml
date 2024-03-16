@@ -1,0 +1,6 @@
+name: usteram
+version: 1.0.0
+description: A microservice that returns "Hello World"
+appVersion: "latest"
+sources:
+  - .

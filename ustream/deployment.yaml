@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ustream
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ustream
+  template:
+    metadata:
+      labels:
+        app: ustream
+    spec:
+      containers:
+      - name: ustream
+        image: bencsbalazs/ustream:latest
+        ports:
+        - containerPort: 5000

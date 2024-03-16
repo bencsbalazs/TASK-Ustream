@@ -1,0 +1,15 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: ustream-pinger
+spec:
+  schedule: "0 * * * *"  # Every minute
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: pinger
+            image: busybox:latest
+            command: ["curl", "http://127.0.0.1:5000/"]
+          restartPolicy: OnFailure
