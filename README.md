@@ -13,7 +13,7 @@ Balázs Bencs
 
 2. Create microservice structure
     1. Create Dockerfile
-    2. Create app.py
+    2. Create app.py - It listening on two endpoints. On default, and metrics. The metrics is in openmetrics format, what can be process tthrough the endpoint.
     3. Add requirements.txt (test the application in a virtualenv)
     4. Create charts folder
     5. Add the charts/Chart.yaml
@@ -30,3 +30,4 @@ Balázs Bencs
 
 4. View metrics
     1. Install prometheus server
+    2. Access the endpoints from browser.
